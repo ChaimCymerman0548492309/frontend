@@ -39,12 +39,12 @@ const Products = () => {
 
   const handleProductClick = (productId : string) => {
     // מתוך המוצר, יש לשלוף את הפרטים של המוצר ולשלוף לדף "פרטי מוצר"
-    navigate(`/productDetails/${productId}`);
+    navigate(`/product/${productId}`);
   };
 
   const handleAddProduct = () => {
     // יש להעביר לדף "הוספת מוצר"
-    navigate('/addProduct');
+    navigate('/AddProduct');
   };
 
   const filteredProducts = products.filter((product) => {

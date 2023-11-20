@@ -6,6 +6,9 @@ import Layout from "./components/Layout";
 import Home from "./components/Home";
 import Sign_up from "./components/Sign_up";
 import Products from "./components/Products";
+import AddProduct from "./components/AddProduct";
+import Product from "./components/Product";
+import EditProduct from "./components/EditProduct";
 // import Product from "./pages/Product";
 // import Products from "./pages/Products";
 // import Login from "./pages/Login";
@@ -29,11 +32,10 @@ function App() {
             <Route index element={<Home/>} />
             <Route path="/Sign_up" element={<Sign_up />} />
             <Route path="/Products" element={<Products />} />
+            <Route path="/Product/:id" element={<Product />} />
+            <Route path="/AddProduct" element={<AddProduct />} />
+            <Route path="/EditProduct/:id" element={<EditProduct />} />
 
-            {/* <Route path="/products" element={<Products />} />
-            <Route path="/product" element={<Product />} />
-            <Route path="/login" element={<Login />} />
-            <Route path="/Sign" element={<Sign />} /> */}
           </Route>
         </Routes>
       </BrowserRouter>

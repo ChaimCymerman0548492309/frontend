@@ -4,6 +4,8 @@ import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout";
 import Home from "./components/Home";
+import Sign_up from "./components/Sign_up";
+import Products from "./components/Products";
 // import Product from "./pages/Product";
 // import Products from "./pages/Products";
 // import Login from "./pages/Login";
@@ -24,7 +26,10 @@ function App() {
         {/* <CssBaseline /> */}
         <Routes>
           <Route path="/" element={<Layout />}>
-            <Route index element={<Home />} />
+            <Route index element={<Home/>} />
+            <Route path="/Sign_up" element={<Sign_up />} />
+            <Route path="/Products" element={<Products />} />
+
             {/* <Route path="/products" element={<Products />} />
             <Route path="/product" element={<Product />} />
             <Route path="/login" element={<Login />} />
